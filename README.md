@@ -6,7 +6,7 @@ Code will be released soon.
 In the meanwhile ArXiv version of our [Paper](https://arxiv.org/pdf/2211.12292.pdf) is available.
 
 ![Architecture](figs/Architecture.png)
-###Requirements
+### Requirements
 In order to use our code, it is possible to create a conda environment using the requirements.txt file and Python 3.9.
 
 ![GCAB](figs/GCAB.png)
@@ -22,4 +22,8 @@ If you are considering using our code or you want to cite our paper please use:
 }
 
 ```
+#### Credits
+Our code takes inspiration from:
 
+[DyToX](https://github.com/arthurdouillard/dytox)
+[HAT](https://github.com/joansj/hat)
