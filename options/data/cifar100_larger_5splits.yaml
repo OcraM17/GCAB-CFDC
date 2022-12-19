@@ -1,0 +1,5 @@
+data_set: CIFAR
+initial_increment: 40
+increment: 12
+
+log_category: 40-12

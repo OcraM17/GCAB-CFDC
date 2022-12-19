@@ -1,0 +1,44 @@
+#######################
+# GCAB-FDC, for CIFAR100 #
+#######################
+
+# Model definition
+model: convit
+embed_dim: 384
+depth: 6
+num_heads: 12
+patch_size: 4
+input_size: 32
+local_up_to_layer: 5
+class_attention: true
+
+# Training setting
+no_amp: true
+eval_every: 50
+
+# Base hyperparameter
+weight_decay: 0.000001
+batch_size: 128
+incremental_batch_size: 128
+incremental_lr: 0.0005
+
+GCAB: true
+freeze_task: [old_task_tokens, old_heads]
+thres_cosh: 50
+thres_emb: 6
+smax: 800
+lambda_gcab: 0.05
+lambda_pfr: 0.001
+
+
+# Independent Classifiers
+ind_clf: 1-1
+bce_loss: true
+
+## Erasing
+reprob: 0.0
+remode: pixel
+recount: 1
+resplit: false
+
+

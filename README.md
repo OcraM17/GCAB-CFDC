@@ -4,10 +4,24 @@
 ArXiv version of our [Paper](https://arxiv.org/pdf/2211.12292.pdf) is available.
 
 ![Architecture](figs/Architecture.png)
-### Requirements
-In order to use our code, it is possible to create a conda environment using the requirements.txt file and Python 3.9.
 ## Running code
-Code will be released soon.
+In order to use our code, it is possible to create a conda environment using the requirements.txt file and Python 3.9.
+
+For training the model please run:
+```
+python3 main.py --options options/data/DATASET_SCENARIO options/data/DATASET_ORDER 
+options/model/DATASET_GCAB_FDC --name GCAB --data-path PATH 
+--output-basedir OUTPUTDIR --compress COMPRESS_FILE.txt --report REPORT
+
+```
+For evaluating the trained model:
+```
+python3 main.py --options options/data/DATASET_SCENARIO options/data/DATASET_ORDER 
+options/model/DATASET_GCAB_FDC --name GCAB --data-path PATH 
+--output-basedir OUTPUTDIR --compress COMPRESS_FILE.txt --report REPORT 
+--resume PATH_TO_THE_MODEL --eval
+
+```
 
 ![GCAB](figs/GCAB.png)
 ### Reference
@@ -23,7 +37,7 @@ If you are considering using our code or you want to cite our paper please use:
 
 ```
 #### Credits
-Our code takes inspiration from:
+Our code is based on:
 
 [DyToX](https://github.com/arthurdouillard/dytox)
 [HAT](https://github.com/joansj/hat)
