@@ -1,6 +1,0 @@
-data_set: tiny
-initial_increment: 100
-increment: 20
-memory_size: 0
-
-log_category: 20-20
